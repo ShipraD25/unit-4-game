@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+</head>
+
+<body>
+    <!--<div class="jumbotron">-->
+    <h1>CrystalsCollector!</h1>
+    <!--</div>-->
+    <!--<div class="jumbotron">-->
+    <div class="text right">
+        <p>You will be given a randon number at the start of the game</p>
+        <p>There are four crystals below. By clicking on crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number,you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click it.</p>
+        <P>Each time when the game starts, the game will change the values of each crystal</P>
+    </div>
+
+    <div class="target-num">
+        <h3>Target score</h3>
+    </div>
+    <div class="score-space">
+        <p id="wintext">wins :</p>
+        <p id="lossestext">Loss :</p>
+    </div>
+
+    <button>
+            <img src="assets/images/blue.png" id="crystal-button"/>
+        </button>
+    <button>
+                <img src="assets/images/green.png" id="crystal-button"/>
+        </button>
+    <button>
+                    <img src="assets/images/red.png" id="crystal-button"/>
+    </button>
+    <button>
+                        <img src="assets/images/yellow.png" id="crystal-button"/>
+    </button>
+
+    <div class="Total-score">
+        <p id="user-score">Your Total Score is :</p>
+    </div>
+</body>
+<script src="assets/javascript/game.js"></script>
+
+</html>
