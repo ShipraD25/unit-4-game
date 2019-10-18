@@ -8,6 +8,29 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+    <style>
+        .target-num {
+            width: 200px;
+            height: 80px;
+            background-color: greenyellow;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            padding-top: 50px;
+        }
+        
+        .score-space {
+            width: 100px;
+            height: 80;
+            background-color: indianred;
+            padding: 20px;
+        }
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,29 +46,33 @@
         <P>Each time when the game starts, the game will change the values of each crystal</P>
     </div>
 
-    <div class="target-num">
-        <h3>Target score</h3>
+    <div>
+        <!--<h3>Target score: <span id="target-num"></span></h3>-->
+        <h1 class="target-num"></h1>
     </div>
     <div class="score-space">
-        <p id="wintext">wins :</p>
-        <p id="lossestext">Loss :</p>
+        <p>wins: <span id="wintext">0</span></p>
+        <p>Loss:<span id="lossestext">0</span></p>
+
     </div>
 
-    <button>
-            <img src="assets/images/blue.png" id="crystal-button"/>
-        </button>
-    <button>
-                <img src="assets/images/green.png" id="crystal-button"/>
-        </button>
-    <button>
-                    <img src="assets/images/red.png" id="crystal-button"/>
-    </button>
-    <button>
-                        <img src="assets/images/yellow.png" id="crystal-button"/>
-    </button>
+
+    <img class="crystal-button" src="assets/images/blue.png" id="blue-button" crystalnumber="0" />
+
+
+    <img class="crystal-button" src="assets/images/green.png" id="green-button" crystalnumber="1" />
+
+
+    <img class="crystal-button" src="assets/images/red.png" id="pink-button" crystalnumber="2" />
+
+
+
+
+    <img class="crystal-button" src="assets/images/yellow.png" id="yellow-button" crystalnumber="3" />
+
 
     <div class="Total-score">
-        <p id="user-score">Your Total Score is :</p>
+        <p>Your Total Score is :<span id="user-score"></span></p>
     </div>
 </body>
 <script src="assets/javascript/game.js"></script>
