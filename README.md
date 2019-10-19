@@ -39,4 +39,6 @@ Pseudocode has been put to understand the functionality of code.
 
         ## Game Preview
 
-        ![image](https://user-images.githubusercontent.com/54960706/67139995-f5dce500-f20a-11e9-89c0-c8877435ec6c.png)
+        ![image](https://user-images.githubusercontent.com/54960706/67140050-77347780-f20b-11e9-8fb6-86566e4a13b8.png)
+
+
