@@ -4,20 +4,20 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
     var userScore = 0;
-    var targetScore = 0
-    var crystals = []
+    var targetScore = 0;
+    var crystals = [];
 
 
     // declaring a function that will restart the game everytime it's called.
     function play() {
-        userScore = 0
-            //creating random target number.
+        userScore = 0;
+        //creating random target number.
         $("#user-score").text(userScore);
         targetScore = Math.floor(Math.random() * 120) + 19;
         $("#target-num").text(targetScore);
 
         // calculate 4 randon values for the crystals.
-        crystals = []
+
 
         for (var i = 0; i < 4; i++) {
             crystals[i] = Math.floor(Math.random() * 12) + 1;
