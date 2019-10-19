@@ -9,70 +9,118 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
     <style>
-        .target-num {
+        .wrapper {
+            background-color: lightgrey;
+        }
+        
+        h1 {
+            width: 300px;
+            height: 60px;
+            background-color: palevioletred;
+            color: mistyrose;
+            text-align: center;
+            padding-top: 50px;
+            border: black solid 3px;
+        }
+        
+        .text-left {
+            width: 500px;
+            height: 250px;
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 17px;
+            border: solid black 3px;
+        }
+        
+        #target-num {
             width: 200px;
             height: 80px;
-            background-color: greenyellow;
+            background-color: burlywood;
             color: white;
             text-align: center;
             padding: 40px;
             padding-top: 50px;
+            border: black solid 3px;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
         }
         
         .score-space {
             width: 100px;
-            height: 80;
-            background-color: indianred;
+            height: 70px;
+            background-color: burlywood;
+            color: white;
             padding: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: center;
+            border: solid black 3px;
         }
         
         img {
             width: 100px;
             height: 100px;
         }
+        
+        .Total-score {
+            width: 200px;
+            height: 80px;
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 18px;
+            border: solid black 3px;
+        }
     </style>
 </head>
 
 <body>
-    <!--<div class="jumbotron">-->
-    <h1>CrystalsCollector!</h1>
-    <!--</div>-->
-    <!--<div class="jumbotron">-->
-    <div class="text right">
-        <p>You will be given a randon number at the start of the game</p>
-        <p>There are four crystals below. By clicking on crystal you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to random number,you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click it.</p>
-        <P>Each time when the game starts, the game will change the values of each crystal</P>
-    </div>
+    <div class="wrapper">
+        <h1>CrystalsCollector!</h1>
+        <!--</div>-->
+        <!--<div class="jumbotron">-->
+        <div class="text-left">
+            <p>You will be given a randon number at the start of the game</p>
+            <p>There are four crystals below. By clicking on crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number,you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click it.</p>
+            <P>Each time when the game starts, the game will change the values of each crystal</P>
+        </div>
 
-    <div>
-        <!--<h3>Target score: <span id="target-num"></span></h3>-->
-        <h1 class="target-num"></h1>
-    </div>
-    <div class="score-space">
-        <p>wins: <span id="wintext">0</span></p>
-        <p>Loss:<span id="lossestext">0</span></p>
+        <div>
+            <!--<h3>Target score: <span id="target-num"></span></h3>-->
+            <h1 id="target-num" class="clearfix"></h1>
+        </div>
+        <div class="score-space">
+            <p>wins: <span id="wintext">0</span></p>
+            <p>Loss: <span id="lossestext">0</span></p>
 
-    </div>
-
-
-    <img class="crystal-button" src="assets/images/blue.png" id="blue-button" crystalnumber="0" />
+        </div>
 
 
-    <img class="crystal-button" src="assets/images/green.png" id="green-button" crystalnumber="1" />
+        <img class="crystal-button" src="assets/images/blue.png" id="blue-button" crystalnumber="0" />
 
 
-    <img class="crystal-button" src="assets/images/red.png" id="pink-button" crystalnumber="2" />
+        <img class="crystal-button" src="assets/images/green.png" id="green-button" crystalnumber="1" />
+
+
+        <img class="crystal-button" src="assets/images/red.png" id="pink-button" crystalnumber="2" />
 
 
 
 
-    <img class="crystal-button" src="assets/images/yellow.png" id="yellow-button" crystalnumber="3" />
+        <img class="crystal-button" src="assets/images/yellow.png" id="yellow-button" crystalnumber="3" />
 
 
-    <div class="Total-score">
-        <p>Your Total Score is :<span id="user-score"></span></p>
+        <div class="Total-score">
+            <p>Your Total Score is : <span id="user-score"></span></p>
+        </div>
     </div>
 </body>
 <script src="assets/javascript/game.js"></script>

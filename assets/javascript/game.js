@@ -17,7 +17,7 @@ $(document).ready(function() {
             $("#user-score").text(userScore);
             targetScore = Math.floor(Math.random() * 120) + 19;
             console.log(targetScore);
-            $(".target-num").text(targetScore);
+            $("#target-num").text(targetScore);
             //show in the browser the number
             // calculate 4 randon for the crystals
             crystals = []
