@@ -36,8 +36,8 @@ Pseudocode has been put to understand the functionality of code.
             play()
         }
         
-})```
-
+})
+```
        
        
        ## Game Preview
