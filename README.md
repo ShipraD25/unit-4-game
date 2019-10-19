@@ -1,10 +1,10 @@
-# unit-4-game
+# Crystal Collector!
 
 ## Summary
-This is a simple game in which the user has to match his score with the random number presented on the screen.
+This is a simple game in which the user has to match his score points with the random number presented on the screen.
 User will be able to achieve this by clicking the available four crystals. These crystals have values that are hidden from user until he/she clicks it. 
 For each round the user will receive a new random target score as well as crystal will be assigned a new value.
-The user will win if his total score matches with the random target score or the user can loose his total score is greater than the target score.
+The user will win if his total score matches with the random target score or the user can lose if his total score is greater than the target score.
 Wins and losses will go up accordingly.
 
 Pseudocode has been put to understand the functionality of code.
