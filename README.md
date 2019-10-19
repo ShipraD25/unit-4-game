@@ -39,9 +39,9 @@ Pseudocode has been put to understand the functionality of code.
 })
 ```
        
-       
-       ## Game Preview
+## Game Preview
 
-        ![image](https://user-images.githubusercontent.com/54960706/67140050-77347780-f20b-11e9-8fb6-86566e4a13b8.png)
+![image](https://user-images.githubusercontent.com/54960706/67140175-b1524900-f20c-11e9-88bb-ed6c04e6ee78.png)
+
 
 
