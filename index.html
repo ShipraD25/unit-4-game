@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .wrapper {
+        .container {
             background-color: lightgrey;
+            padding: 20px;
+            width: auto;
+            height: auto;
         }
         
         h1 {
@@ -52,7 +55,7 @@
         
         .score-space {
             width: 100px;
-            height: 70px;
+            height: 65px;
             background-color: burlywood;
             color: white;
             padding: 30px;
@@ -61,11 +64,12 @@
             font-size: 20px;
             text-align: center;
             border: solid black 3px;
+            float: right;
         }
         
         img {
             width: 100px;
-            height: 100px;
+            height: 80px;
         }
         
         .Total-score {
@@ -83,13 +87,13 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container">
         <h1>CrystalsCollector!</h1>
         <!--</div>-->
         <!--<div class="jumbotron">-->
         <div class="text-left">
             <p>You will be given a randon number at the start of the game</p>
-            <p>There are four crystals below. By clicking on crystal you will add a specific amount of points to your total score.</p>
+            <p>There are four crystals below. By clicking on crystals you will add a specific amount of points to your total score.</p>
             <p>You win the game by matching your total score to random number,you lose the game if your total score goes above the random number.</p>
             <p>The value of each crystal is hidden from you until you click it.</p>
             <P>Each time when the game starts, the game will change the values of each crystal</P>
