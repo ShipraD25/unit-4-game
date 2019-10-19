@@ -35,9 +35,12 @@ Pseudocode has been put to understand the functionality of code.
             $("#lossestext").text(losses);
             play()
         }
-        ```
+        
+})```
 
-        ## Game Preview
+       
+       
+       ## Game Preview
 
         ![image](https://user-images.githubusercontent.com/54960706/67140050-77347780-f20b-11e9-8fb6-86566e4a13b8.png)
 
