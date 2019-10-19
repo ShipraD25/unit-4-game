@@ -8,6 +8,8 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .wrapper {
             background-color: lightgrey;
@@ -15,28 +17,31 @@
         
         h1 {
             width: 300px;
-            height: 60px;
+            height: 40px;
             background-color: palevioletred;
             color: mistyrose;
             text-align: center;
-            padding-top: 50px;
+            padding: 20px;
             border: black solid 3px;
+            margin: 10px;
+            font-size: 30px;
         }
         
         .text-left {
             width: 500px;
-            height: 250px;
+            height: 150px;
             background-color: burlywood;
             color: white;
             text-align: center;
             padding-top: 10px;
             font-size: 17px;
             border: solid black 3px;
+            margin: 10px;
         }
         
         #target-num {
             width: 200px;
-            height: 80px;
+            height: 40px;
             background-color: burlywood;
             color: white;
             text-align: center;
@@ -45,19 +50,15 @@
             border: black solid 3px;
         }
         
-        .clearfix::after {
-            content: "";
-            clear: both;
-        }
-        
         .score-space {
             width: 100px;
             height: 70px;
             background-color: burlywood;
             color: white;
-            padding: 20px;
-            margin-bottom: 10px;
-            font-size: 18px;
+            padding: 30px;
+            padding-top: 35px;
+            margin: 10px;
+            font-size: 20px;
             text-align: center;
             border: solid black 3px;
         }
@@ -73,9 +74,10 @@
             background-color: burlywood;
             color: white;
             text-align: center;
-            padding-top: 20px;
-            font-size: 18px;
+            padding-top: 40px;
+            font-size: 20px;
             border: solid black 3px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -95,13 +97,14 @@
 
         <div>
             <!--<h3>Target score: <span id="target-num"></span></h3>-->
-            <h1 id="target-num" class="clearfix"></h1>
+            <h1 id="target-num"></h1>
         </div>
+
         <div class="score-space">
             <p>wins: <span id="wintext">0</span></p>
             <p>Loss: <span id="lossestext">0</span></p>
-
         </div>
+
 
 
         <img class="crystal-button" src="assets/images/blue.png" id="blue-button" crystalnumber="0" />
