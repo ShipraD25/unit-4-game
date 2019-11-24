@@ -1,5 +1,6 @@
 # Crystal Collector!
 
+### Game link https://shiprad25.github.io/unit-4-game/
 ## Summary
 This is a simple game in which the user has to match his score points with the random number presented on the screen.
 User will be able to achieve this by clicking the available four crystals. These crystals have values that are hidden from user until he/she clicks it. 
